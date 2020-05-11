@@ -15,7 +15,6 @@ let currentQuestion =0
 const player = new Audio()
 const audioErr ='/assest/img/err.mp3'
 const audioSuccess ='/assest/img/success.mp3'
-const background = '/assest/img/backgroundaudio.ogg'
 const math1 =[
     {
         question : " Viết tiếp số vào chỗ trống:  5, 10, 15, …",
