@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Connect Github</h1>
+    <div class="app">
+        <div class="wrapper">
+            <div class="content">
+                <div class="content-title">
+                    <h3 class="content-title-text">Web học Toán THCS</h3>
+                </div>
+                <div class="content-notification">
+                    <i class="fa fa-bell"></i>
+                </div>
+                <div class="select">
+                    <select class="selection" value='' onchange="getValue()">
+                        <option value="">Hãy chọn lớp</option>
+                        <option value="1">Lớp 1</option>
+                        <option value="2">Lớp 2</option>
+                        <option value="3">Lớp 3</option>
+                        <option value="4">Lớp 4</option>
+                        <option value="5">Lớp 5</option>
+                    </select>
+                    <div class="start">
+                        <i class="fa fa-search-plus"></i>
+                    </div>
+                    <div class="start-time">
+                        <p>Bắt đầu học</p>
+                    </div>
+                    <div class="send-result">
+                        <div class="question-wrapper">
+                            <h3 class="question"></h3>
+                        </div>
+                        <input class="result" type="text" placeholder="Nhập kết quả">
+                        <button class="send">Gửi kết quả</button>
+                        <button class="next">
+                            Chuyễn bài
+                        </button>
+                        <div class="status">
+                            <p class="status-value">Đúng rồi</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assest/js/java.js"></script>
 </body>
 </html>
