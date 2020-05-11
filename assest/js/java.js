@@ -12,9 +12,6 @@ const status = document.querySelector('.status')
 const satusValue = document.querySelector('.status-value')
 let classSelect = null
 let currentQuestion =0 
-const player = new Audio()
-const audioErr ='/assest/img/err.mp3'
-const audioSuccess ='/assest/img/success.mp3'
 const math1 =[
     {
         question : " Viết tiếp số vào chỗ trống:  5, 10, 15, …",
@@ -150,14 +147,10 @@ sendResult.addEventListener('click', () =>{
         next.style.display="block"
         status.style.display="block"
         satusValue.innerHTML="Đúng rồi"
-        player.src = audioSuccess
-        player.play()
     }
     else{
         status.style.display="block"
         satusValue.innerHTML="Sai rồi"
-        player.src = audioErr
-        player.play()
     }
 })
 next.addEventListener('click', () =>{
