@@ -120,14 +120,11 @@ const math2 =[
         answer:8
     },
 ]
-let tmp=[
-
-]
+let tmp=[]
 function getValue(){
     classSelect = parseInt(select.value)
     if(classSelect === 1){
         tmp = [...math1];
-        console.log(tmp);
     }
     if(classSelect ===2 ){
         tmp=[...math2]
@@ -140,8 +137,6 @@ function getQuestion(){
     result.style.display="block"
     sendResult.style.display="block"
     question.innerHTML = "Câu " + (currentQuestion+1) + ':' + tmp[currentQuestion].question
-    player.src= background
-    player.play()
 }
 start.addEventListener('click', () =>{
     title.innerHTML = "Toán học lớp" + ' ' + classSelect
@@ -172,6 +167,4 @@ next.addEventListener('click', () =>{
     currentQuestion++
     result.value=''
     getQuestion()
-    player.src= background
-    player.play()
 })
